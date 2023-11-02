@@ -82,12 +82,69 @@ body{
 }
 .movieCard{
     width: 300px;
-    background: #fff;
     margin: 1rem;
-    border-radius: 5px;
+    background: var(--secondry-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
     overflow: hidden;
+    border-radius: 3px;
 }
-.img{
+.movieCard img{
     width: 100%;
-    background: red;
+}
+.movie-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.movie-info h3{
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+.movie-info span{
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: yellowgreen;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.overview{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    padding: 1rem;
+    transform: translateY(101%);
+    background: #fff;
+    transition: 0.3s ease-in ;
+}
+.overview h3{
+    font-size: 25px;
+    /* font-weight: 600; */
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+.movie-info span.green{
+    color: rgb(137, 255, 47);
+}
+.movie-info span.orange{
+    color: rgb(255, 106, 36);
+}
+.movie-info span.red{
+    color: rgb(255, 0, 0);
+}
+.movieCard:hover .overview{
+    transform: translateY(0);
 }
