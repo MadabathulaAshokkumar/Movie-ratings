@@ -106,6 +106,7 @@ body{
     /* font-weight: 600; */
     letter-spacing: 1px;
     margin-left: 5px;
+    max-width: 220px;
 }
 .movie-info span{
     width: 40px;
@@ -140,10 +141,10 @@ body{
     color: rgb(137, 255, 47);
 }
 .movie-info span.orange{
-    color: rgb(255, 106, 36);
+    color: rgb(254, 147, 97);
 }
 .movie-info span.red{
-    color: rgb(255, 0, 0);
+    color: rgb(177, 0, 0);
 }
 .movieCard:hover .overview{
     transform: translateY(0);
